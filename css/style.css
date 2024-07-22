@@ -18,6 +18,7 @@
 .content__overlay {
     display: flex;
     flex-direction: column;
+    row-gap: 50px;
 }
 
 .get {}
@@ -40,9 +41,20 @@
 
 .form__submit {}
 
-.post {}
+.post {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 20px;
+}
 
 .post__title {text-align: center;}
 
 .post__data {}
+.post__btn{
+    margin: o auto;
+    text-transform: uppercase;
+    font-weight: 600;
+}
 
