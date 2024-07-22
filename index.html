@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NS Get Fille</title>
+    <title>NS Get File</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -11,20 +11,21 @@
         <div class="content__container">
             <div class="content__overlay">
                 <div class="post">
-                    <button class="post__btn">ОТРИМАТИ КЛЮЧ</button>
+                    <button id="getKeyBtn" class="post__btn">ОТРИМАТИ КЛЮЧ</button>
                     <h2 class="post__title">Тут буде сформований ключ</h2>
-                    <span class="post__data"></span>
+                    <span id="keyContainer" class="post__data"></span>
                 </div>
                 
                 <div class="get">
-                    <form class="content__form form" action="#">
+                    <form id="keyForm" class="content__form form">
                         <label class="form__label" for="get">Сюди пишемо наш ключ</label>
-                        <input class="form__input" type="text" id="get" placeholder="Сюди ключ який прийшов">
-                        <button class="form__submit">Відправити</button>
+                        <input class="form__input" type="text" id="getKeyInput" placeholder="Сюди ключ який прийшов">
+                        <button id="submitKeyBtn" class="form__submit" type="submit">Відправити</button>
                     </form>
                 </div>
             </div>
         </div>
     </section>
+    <script src="js/script.js"></script>
 </body>
 </html>
