@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const submitKeyBtn = document.getElementById('submitKeyBtn');
 
     getKeyBtn.addEventListener('click', function() {
-        fetch('get_key.php')
+        fetch('ns-get-fille/get_key.php')
             .then(response => response.json())
             .then(data => {
                 if (data.access_token) {
@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function() {
         event.preventDefault();
         const key = getKeyInput.value;
 
-        fetch('download_file.php', {
+        fetch('ns-get-fille/download_file.php', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/x-www-form-urlencoded',
