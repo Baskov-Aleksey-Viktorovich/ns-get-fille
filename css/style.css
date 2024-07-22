@@ -2,4 +2,47 @@
     width: 1320px;
     margin: 0 auto;
     border: 2px solid black;
+    height: 50vh;
 }
+
+.content__form{} 
+
+.form__input {}
+
+.content{}
+
+.content__container {
+    background-color: #ccc;
+}
+
+.content__overlay {
+    display: flex;
+    flex-direction: column;
+}
+
+.get {}
+
+.content__form {}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.form__label{
+    font-size: 24px;
+} 
+
+.form__input {}
+
+.form__submit {}
+
+.post {}
+
+.post__title {text-align: center;}
+
+.post__data {}
+
