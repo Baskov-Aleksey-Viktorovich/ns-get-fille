@@ -9,6 +9,6 @@ if (isset($obj->access_token)) {
     echo json_encode($obj);
 } else {
     header('Content-Type: application/json');
-    echo json_encode(['error' => 'Не вдалося отримати ключ.']);
+    echo json_encode(['error' => 'Не вдалося отримати ключ.', 'details' => $obj]);
 }
 ?>

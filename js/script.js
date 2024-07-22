@@ -14,6 +14,9 @@ document.addEventListener('DOMContentLoaded', function() {
                     getKeyInput.value = data.access_token;
                 } else {
                     keyContainer.textContent = data.error || 'Не вдалося отримати ключ';
+                    if (data.details) {
+                        console.error('Деталі помилки:', data.details);
+                    }
                 }
             })
             .catch(error => {
