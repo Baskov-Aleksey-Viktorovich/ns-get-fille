@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     keyContainer.textContent = data.access_token;
                     getKeyInput.value = data.access_token;
                 } else {
-                    keyContainer.textContent = 'Не вдалося отримати ключ';
+                    keyContainer.textContent = data.error || 'Не вдалося отримати ключ';
                 }
             })
             .catch(error => {
